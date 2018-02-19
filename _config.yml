@@ -1,0 +1,2 @@
+baseurl: /lanki
+exclude: ['README.md']
