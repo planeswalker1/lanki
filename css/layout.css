@@ -114,3 +114,9 @@ main li {
 .flex-container--contact-info > div {
   margin: 10px;
 }
+
+@media screen and (min-width: 1360px) {
+  .nav-container {
+    width: 1360px;
+  }
+}
