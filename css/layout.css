@@ -117,6 +117,6 @@ main li {
 
 @media screen and (min-width: 1360px) {
   .nav-container {
-    width: 1360px;
+    width: 1360px !important;
   }
 }
