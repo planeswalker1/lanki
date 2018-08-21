@@ -1,59 +1,60 @@
-/*CONTAINER*/
+/*CONTAINER STYLES*/
 .container {
-  max-width: 1360px;
   margin: 0 auto;
+  max-width: 1360px;
 }
 
-/*NAV*/
+/*NAV STYLES*/
 .nav__ul {
-    align-items: center;
-    display: flex;
-    list-style-type: none;
-    color: #000;
-    margin: 0;
-    padding: 0;
-    min-height: 61px;
-}
+  color: #000;
+  
+  display: flex;
+  align-items: center;
 
+  list-style-type: none;
+  min-height: 61px;
+  margin: 0;
+  padding: 0;
+}
 
 .nav__ul li {
-    font-weight: 600;
-    font-size: 11px;
-    letter-spacing: .25em;
-    margin: 0 10px;
-    text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .25em;
+  margin: 0 10px;
+  text-transform: uppercase;
 }
 
 .nav__ul li a {
-    color: #000;
-    text-decoration: none;
+  color: #000;
+  text-decoration: none;
 }
 
 .nav__cta {
-    border: 2px solid #000;
-    border-radius: 19px;
-    padding: 5px 15px;
+  border: 2px solid #000;
+  border-radius: 19px;
+  padding: 5px 15px;
 }
 
 .nav__logo {
-    max-width: 55px;
-    height: 55px;
+  height: 55px;
+  max-width: 55px;
 }
 
 .nav__ul li.nav__social {
-    margin: 0 6px;
+  margin: 0 6px;
 }
 
 .nav__social i {
-    font-size: 20px;
+  font-size: 20px;
 }
 
-/*RESPONSIVE-NAV*/
+/*RESPONSIVE-NAV STYLES*/
 .responsive-nav {
   background-color: #fff;
   color: #fff;
-  height: 100%;
   width: 100%;
+  height: 100%;
   position: fixed;
   left: 0;
   top: 0;
@@ -64,10 +65,10 @@
 
 .responsive-nav__ul {
   color: #000;
+  font-size: 20px;
+  list-style-type: none;
   margin: 100px 10px 0;
   padding: 30px;
-  list-style-type: none;
-  font-size: 20px;
 }
 
 .responsive-nav__ul a {
@@ -84,8 +85,8 @@
 }
 
 .responsive-nav__display {
-  align-items: center;
   display: none;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
 
@@ -93,37 +94,37 @@
   z-index: 3;
 }
 
-/*SVG*/
+/*SVG STYLES*/
 .responsive-nav__display svg {
   height: 80px;
   max-width: 80px;
 }
 
 .responsive-nav__display svg#icon-hamburger {
-  min-width: 30px;
   height: 30px;
+  min-width: 30px;
 }
 
 .svg-inline--fa {
-   font-size: 40px;
-   color: #f05f40
+  color: #f05f40
+  font-size: 40px;
 }
 
-/*HEADER*/
+/*HEADER STYLES*/
 .intro {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  display: flex;
-  flex-direction: column;
-  flex: 2;
 }
 
-/*HR*/
+/*HR STYLES*/
 .hr {
-  width: 50px;
-  height: 3px;
   background-color: #f05f40;
   margin: 15px 0;
+  width: 50px;
+  height: 3px;
 }
 
 .hr--white {
@@ -134,7 +135,7 @@
   background-color: #f05f40;
 }
 
-/*BUTTONS*/
+/*BUTTON STYLES*/
 .btn {
   border: 2px solid #fff;
   border-radius: 30px;
@@ -158,23 +159,23 @@
 }
 
 .btn--white:hover {
-  color: #222;
   background-color: #f2f2f2;
+  color: #222;
 }
 
-/*SERVICES & CONTACT*/
+/*SERVICES & CONTACT STYLES*/
 .flex-container--services,
 .flex-container--contact {
   background-color: #fff;
   color: #000;
 }
 
-/*SERVICES*/
+/*SERVICES STYLES*/
 .flex-container--services-info > div {
   margin: 10px;
 }
 
-/*TEAM & PORTFOLIO*/
+/*TEAM & PORTFOLIO STYLES*/
 .flex-container--portfolio,
 .flex-container--team {
   padding: 30px 0;
@@ -182,36 +183,19 @@
 
 .flex-container--team-info a,
 .flex-container--portfolio-info a {
-  text-decoration: none;
-  border: 1px solid blue;
+  border: 1px solid #222;
+  background-color: #222;
+  border-radius: 3px;
+  color: #fff;
   padding: 10px;
+  text-decoration: none;
+  transition: all 0.5s;
 }
 
-@media screen and (max-width: 961px) {
-  .responsive-nav__display {
-      display: flex;
-  }
-
-  .responsive-nav__display svg,
-  .responsive-nav__display div {
-    padding: 8px 12px;
-  }
-
-  .nav {
-      display: none;
-  }
-
-  .flex-container--services-info > div,
-  .flex-container--team-info > li,
-  .flex-container--portfolio-info > li {
-    margin: 30px 0;
-  }
-
-  .flex-container--contact-info > div {
-    margin: 30px 0;
-  }
-
-  .flex-container--contact > p {
-    width: 80%;
-  }
+.flex-container--team-info a:hover,
+.flex-container--portfolio-info a:hover {
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
+  text-shadow: none;
 }

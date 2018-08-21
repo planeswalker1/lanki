@@ -1,13 +1,10 @@
----
----
-
 header {
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
 
-header .nav-container {
+.nav-container {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -28,7 +25,8 @@ main ul {
 }
 
 main li {
-  background-image: url({{ site.baseurl }}/img/snowman-1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .1)), url({{ site.baseurl }}/img/snowman-1.jpg);
+  background-position: center left;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 300px;
@@ -36,6 +34,18 @@ main li {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.portfolio__item--yum {
+  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .1)), url({{ site.baseurl }}/img/yum.jpg)
+}
+
+.portfolio__item--kitchen {
+  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .1)), url({{ site.baseurl }}/img/kitchen.jpg)
+}
+
+.portfolio__item--shop {
+  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .1)), url({{ site.baseurl }}/img/shop.jpg)
 }
 
 .flex-container {
@@ -47,19 +57,19 @@ main li {
   text-align: center;
 }
 
-/*ABOUT*/
+/*ABOUT STYLES*/
 .flex-container--about {
   background-color: #f05f40;
   color: #fff;
   min-height: 500px;
 }
 
-/*SERVICES & TEAM*/
+/*SERVICES & TEAM STYLES*/
 .flex-container ul {
   width: 100%;
 }
 
-/*SERVICES*/
+/*SERVICES STYLES*/
 .flex-container--services {
   min-height: 500px;
 }
@@ -78,7 +88,7 @@ main li {
   width: 300px;
 }
 
-/*PORTFOLIO & TEAM*/
+/*PORTFOLIO & TEAM STYLES*/
 .flex-container--portfolio,
 .flex-container--team {
   min-height: 300px;
@@ -93,7 +103,7 @@ main li {
   padding: 0;
 }
 
-/*CONTACT*/
+/*CONTACT STYLES*/
 .flex-container--contact {
   min-height: 500px;
 }
@@ -115,8 +125,38 @@ main li {
   margin: 10px;
 }
 
+/* MEDIA QUERY STYLES */
 @media screen and (min-width: 1360px) {
   .nav-container {
-    width: 1360px !important;
+    width: 1360px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .responsive-nav__display {
+      display: flex;
+  }
+
+  .responsive-nav__display svg,
+  .responsive-nav__display div {
+    padding: 8px 12px;
+  }
+
+  .nav {
+      display: none;
+  }
+
+  .flex-container--services-info > div,
+  .flex-container--team-info > li,
+  .flex-container--portfolio-info > li {
+    margin: 30px 0;
+  }
+
+  .flex-container--contact-info > div {
+    margin: 30px 0;
+  }
+
+  .flex-container--contact > p {
+    width: 80%;
   }
 }

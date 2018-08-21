@@ -1,5 +1,4 @@
-// this is for the hamburger menu
-
+// select hamburger svg and rects, on hamburger click, toggle animation class on rects
 var iconHamburger = document.querySelector("#icon-hamburger");
 var showReponsiveNav = document.querySelector(".responsive-nav");
 
@@ -8,8 +7,7 @@ iconHamburger.addEventListener("click", function () {
 });
 
 
-// listener for all the list items
-
+// toggle menu overlay on list item click
 var menuItems = document.querySelectorAll(".responsive-nav__ul a");
 
 menuItems.forEach(function (item) {
@@ -20,7 +18,6 @@ menuItems.forEach(function (item) {
 
 
 // https://css-tricks.com/snippets/jquery/smooth-scrolling/
-
 
 // Select all links with hashes
 $('a[href*="#"]')
