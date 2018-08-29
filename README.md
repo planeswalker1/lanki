@@ -1,6 +1,6 @@
 # _lanki_
 
-#### _Single page website website, 08.21.2018_
+#### _Single page website website, 08.28.2018_
 
 #### By _**planeswalker1**_
 

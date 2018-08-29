@@ -7,7 +7,7 @@
 /*NAV STYLES*/
 .nav__ul {
   color: #000;
-  
+
   display: flex;
   align-items: center;
 
@@ -106,7 +106,7 @@
 }
 
 .svg-inline--fa {
-  color: #f05f40
+  color: #f05f40;
   font-size: 40px;
 }
 
